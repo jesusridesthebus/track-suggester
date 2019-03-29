@@ -14,36 +14,57 @@
   <main class="container">
     <h1>Which coding language should you focus on at Epicodus?</h1>
     <form id="track-form">
-      <div class="form-group">
-        1. Which type of company would you like to work for as a programmer?
+
+      <div class="form-group" id="first-question">
+        <h4>1. What most interests you about studying at Epicodus?</h4>
+        <div>
+          <input type="checkbox" name="facility" id="facility">
+          <label for="facility">The facility and location</label>
+        </div>
+        <div>
+          <input type="checkbox" name="teachers" id="teachers">
+          <label for="teachers">The teachers and the fact that they are alumni</label>
+        </div>
+        <div>
+          <input type="checkbox" name="graduates" id="graduates">
+          <label for="graduates">The success rate of graduates</label>
+        </div>
+        <div>
+          <input type="checkbox" name="accessibility" id="accessibility">
+          <label for="accessibility">Affordable tuition and access to school computers</label>
+        </div>
+      </div>
+
+      <div class="form-group" id="fifth-question">
+        <h4>5. Which type of company would you like to work for as a programmer?</h4>
         <div class="radio1">
           <label>
-            <input type="radio" name="first-question" value="c-sharp1" checked>
+            <input type="radio" name="fifth-question" id="c-sharp5" value="c-sharp5" checked>
             A bigger, established business
           </label>
         </div>
         <div class="radio2">
           <label>
-            <input type="radio" name="first-question" value="css-design1">
+            <input type="radio" name="fifth-question" id="css-design5" value="css-design5">
             Anywhere I can use my creative design skills
           </label>
         </div>
         <div class="radio3">
           <label>
-            <input type="radio" name="first-question" value="php1">
+            <input type="radio" name="fifth-question" id="php5" value="php5">
             A government agency
           </label>
         </div>
         <div class="radio4">
           <label>
-            <input type="radio" name="first-question" value="java1">
+            <input type="radio" name="fifth-question" id="java5" value="java5">
             An enterprise-level company
           </label>
         </div>
         <div class="radio5">
           <label>
-            <input type="radio" name="first-question" value="ruby1">
-            Startups & smaller companies
+            <input type="radio" name="fifth-question" id="ruby5" value="ruby5">
+            A startup or smaller company
           </label>
         </div>
       </div>
