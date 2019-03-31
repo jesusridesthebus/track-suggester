@@ -6,6 +6,7 @@ $(function () {
     $('.result-php').hide();
     $('.result-ruby').hide();
     $('.result-css-design').hide();
+    $('.result-anything').hide();
 
     var frontBack = $('input:radio[name=second-question]:checked').val();
     var curriculum = $('#curriculum-module option:selected').val();
@@ -31,17 +32,21 @@ $(function () {
       $('.result-css-design').show();
     } else if (frontBack === 'front2' && (curriculum === 'css-design4' || company === 'css-design5')) {
       $('.result-css-design').show();
-    } else if (curriculum === 'ruby4') {
-      $('.result-ruby').show();
-    } else if (curriculum === 'java4') {
-      $('.result-java').show();
-    } else if (curriculum === 'css-design4') {
-      $('.result-css-design').show();
-    } else if (curriculum === 'c-sharp4') {
-      $('.result-c-sharp').show();
-    } else if (curriculum === 'php4') {
-      $('.result-php').show();
+    } else {
+      $('.result-anything').show();
     }
 
   });
 });
+
+// else if (curriculum === 'ruby4') {
+//   $('.result-ruby').show();
+// } else if (curriculum === 'java4') {
+//   $('.result-java').show();
+// } else if (curriculum === 'css-design4') {
+//   $('.result-css-design').show();
+// } else if (curriculum === 'c-sharp4') {
+//   $('.result-c-sharp').show();
+// } else if (curriculum === 'php4') {
+//   $('.result-php').show();
+// }
